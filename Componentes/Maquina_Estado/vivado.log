@@ -2,41 +2,53 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Jan  9 18:56:14 2019
-# Process ID: 812
-# Current directory: C:/Users/ALEX PC/Desktop/Maquina_Estado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9568 C:\Users\ALEX PC\Desktop\Maquina_Estado\Maquina_Estado.xpr
-# Log file: C:/Users/ALEX PC/Desktop/Maquina_Estado/vivado.log
-# Journal file: C:/Users/ALEX PC/Desktop/Maquina_Estado\vivado.jou
+# Start of session at: Wed Jan  9 20:53:00 2019
+# Process ID: 13036
+# Current directory: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14928 C:\Users\Javier\Documents\GitHub\TrabajoVHDL\Componentes\Maquina_Estado\Maquina_Estado.xpr
+# Log file: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/vivado.log
+# Journal file: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.xpr}
+open_project C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ALEX PC/Desktop/Maquina_Estado' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Downloads/digilent-xdc-master/Nexys-4-DDR-Master.xdc', nor could it be found using path 'C:/Users/ALEX PC/Downloads/digilent-xdc-master/Nexys-4-DDR-Master.xdc'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinxb/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 804.340 ; gain = 112.410
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 861.602 ; gain = 108.449
 update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Maquina_Estado
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+2 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-344] 'synth_design' was cancelled
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 "xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Maquina_Estado
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -49,9 +61,10 @@ Compiling package ieee.std_logic_1164
 Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
 Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
 Built simulation snapshot Maquina_Estado_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 981.625 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
    with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
@@ -69,473 +82,30 @@ source Maquina_Estado_tb.tcl
 # }
 # run 1000ns
 Failure: Simulation finished.
-Time: 35 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 35 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 77
+Time: 355 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 355 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 84
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 841.594 ; gain = 9.715
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1017.504 ; gain = 35.879
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 "xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-source Maquina_Estado_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: Simulation finished.
-Time: 35 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 35 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 77
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 852.629 ; gain = 2.902
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
-Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
-Built simulation snapshot Maquina_Estado_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-source Maquina_Estado_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: Simulation finished.
-Time: 35 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 35 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 77
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 852.629 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
-Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
-Built simulation snapshot Maquina_Estado_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-source Maquina_Estado_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 852.629 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
-Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
-Built simulation snapshot Maquina_Estado_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-source Maquina_Estado_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: Simulation finished.
-Time: 35 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 35 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 77
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 852.629 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
-Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
-Built simulation snapshot Maquina_Estado_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-source Maquina_Estado_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: Simulation finished.
-Time: 35 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 35 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 80
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 853.742 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
-Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
-Built simulation snapshot Maquina_Estado_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-source Maquina_Estado_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: Simulation finished.
-Time: 70 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 70 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 80
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
-Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
-Built simulation snapshot Maquina_Estado_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-source Maquina_Estado_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 853.742 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
-Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
-Built simulation snapshot Maquina_Estado_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-source Maquina_Estado_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: Simulation finished.
-Time: 60 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 60 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 80
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 855.910 ; gain = 0.000
-run all
-Failure: Simulation finished.
-Time: 140 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 140 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 80
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run all
-Failure: Simulation finished.
-Time: 60 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 60 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 80
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Maquina_Estado
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -550,7 +120,7 @@ Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
 Built simulation snapshot Maquina_Estado_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
    with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
@@ -568,30 +138,32 @@ source Maquina_Estado_tb.tcl
 # }
 # run 1000ns
 Failure: Simulation finished.
-Time: 60 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 60 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 83
+Time: 355 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 355 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 84
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 862.023 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1036.031 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 "xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -606,7 +178,7 @@ Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
 Built simulation snapshot Maquina_Estado_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
    with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
@@ -624,30 +196,141 @@ source Maquina_Estado_tb.tcl
 # }
 # run 1000ns
 Failure: Simulation finished.
-Time: 80 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 80 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 83
+Time: 75 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 75 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 84
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 862.023 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1037.863 ; gain = 0.277
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 "xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Maquina_Estado
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1042.039 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 75 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 75 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1045.824 ; gain = 1.336
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -662,7 +345,7 @@ Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
 Built simulation snapshot Maquina_Estado_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
    with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
@@ -680,29 +363,363 @@ source Maquina_Estado_tb.tcl
 # }
 # run 1000ns
 Failure: Simulation finished.
-Time: 80 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 80 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 83
+Time: 65 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 65 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 84
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1051.656 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 "xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 65 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 65 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.059 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 145 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 145 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 86
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1054.059 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 275 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 275 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 86
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1056.547 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 275 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 275 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 86
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1056.930 ; gain = 0.137
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1058.254 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 275 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 275 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 86
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1059.441 ; gain = 1.141
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -717,7 +734,7 @@ Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
 Built simulation snapshot Maquina_Estado_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
    with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
@@ -735,11 +752,509 @@ source Maquina_Estado_tb.tcl
 # }
 # run 1000ns
 Failure: Simulation finished.
-Time: 355 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
-$finish called at time : 355 ns : File "C:/Users/ALEX PC/Desktop/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 84
+Time: 275 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 275 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 86
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1062.984 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-exit
-INFO: [Common 17-206] Exiting Vivado at Wed Jan  9 19:57:42 2019...
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 355 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 355 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 89
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1062.984 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 355 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 355 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 89
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1062.984 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 355 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 355 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 89
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1063.414 ; gain = 0.430
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 350 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 350 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 97
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1064.672 ; gain = 0.977
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 605 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 605 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 100
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1065.645 ; gain = 0.723
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 350 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 350 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 97
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1067.840 ; gain = 1.809
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1067.840 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 180 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 180 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 97
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1069.398 ; gain = 0.086
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Maquina_Estado_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Maquina_Estado_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Maquina_Estado_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Maquina_Estado [maquina_estado_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estado_tb
+Built simulation snapshot Maquina_Estado_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Maquina_Estado_tb_behav -key {Behavioral:sim_1:Functional:Maquina_Estado_tb} -tclbatch {Maquina_Estado_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Maquina_Estado_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Failure: Simulation finished.
+Time: 400 ns  Iteration: 3  Process: /Maquina_Estado_tb/stim_proc3  File: C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd
+$finish called at time : 400 ns : File "C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sim_1/new/Maquina_Estado_tb.vhd" Line 97
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Maquina_Estado_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1070.582 ; gain = 0.000

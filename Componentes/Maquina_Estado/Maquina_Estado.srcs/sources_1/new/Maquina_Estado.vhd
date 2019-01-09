@@ -39,7 +39,7 @@ begin
             when S0 => piso_nuevo <= "00";
             when S1 => piso_nuevo <= "01";
             when S2 => piso_nuevo <= "10";
-            WHEN S3 => piso_nuevo <= "11";
+            when S3 => piso_nuevo <= "11";
             when others => piso_nuevo <= "00";
         end case;
     end process;
@@ -55,10 +55,10 @@ begin
                   puerta<='1';
                   motor<="00";
               elsif (piso_deseado /= "00") then
-                  next_state <= S1;
-                  temp <= piso_deseado;
                   puerta<='0';
                   motor<="01";
+                  next_state <= S1;
+                  temp <= piso_deseado;
               end if;
                       
           when S1 =>
@@ -135,10 +135,10 @@ begin
                 puerta<='1';
                 motor<="00";
             elsif (piso_deseado /= "11") then
-                next_state <= S2;
-                temp <= piso_deseado;
                 puerta<='0';
                 motor<="10";
+                next_state <= S2;
+                temp <= piso_deseado;
             end if;           
             
         end case;

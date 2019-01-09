@@ -1,6 +1,6 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinxb/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 12410e6e77e14d7fbf59865634e513a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Maquina_Estado_tb_behav xil_defaultlib.Maquina_Estado_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
