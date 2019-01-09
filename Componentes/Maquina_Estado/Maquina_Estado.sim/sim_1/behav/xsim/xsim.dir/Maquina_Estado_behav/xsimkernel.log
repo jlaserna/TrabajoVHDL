@@ -2,3 +2,6 @@ Running: xsim.dir/Maquina_Estado_behav/xsimk.exe -simmode gui -wdb Maquina_Estad
 Design successfully loaded
 Design Loading Memory Usage: 5304 KB (Peak: 5304 KB)
 Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 5812 KB (Peak: 5812 KB)
+Simulation CPU Usage: 30 ms

@@ -5,90 +5,90 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 
 entity Maquina_Estado is
-    Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           piso_deseado : in STD_LOGIC_VECTOR (1 downto 0);
-           piso_nuevo : out STD_LOGIC_VECTOR (1 downto 0));
+    Port ( clk : in std_logic;
+           reset : in std_logic;
+           piso_deseado : in std_logic_vector (1 downto 0);
+           piso_nuevo : out std_logic_vector (1 downto 0));
 end Maquina_Estado;
 
 architecture Behavioral of Maquina_Estado is
-    TYPE state_type is (S0, S1, S2, S3);
-    SIGNAL state, next_state : state_type;
+    type state_type is (S0, S1, S2, S3);
+    signal state, next_state : state_type;
     
 begin
 
- SYNC_PROC: PROCESS (clk)
-    BEGIN
-        IF rising_edge(clk) THEN
-            IF (reset = '1') THEN
+ SYNC_PROC: process (clk)
+    begin
+        if rising_edge(clk) then
+            if (reset = '1') then
                 state <= S0;
-            ELSE
+            else
                 state <= next_state;
-            END IF;
-        END IF;
-    END PROCESS;
+            end if;
+        end if;
+    end process;
     
-    OUTPUT_DECODE: PROCESS (state)
-    BEGIN
-        CASE (state) is
-            WHEN S0 => piso_nuevo <= "00";
-            WHEN S1 => piso_nuevo <= "01";
-            WHEN S2 => piso_nuevo <= "10";
+    OUTPUT_DECODE: process (state)
+    begin
+        case (state) is
+            when S0 => piso_nuevo <= "00";
+            when S1 => piso_nuevo <= "01";
+            when S2 => piso_nuevo <= "10";
             WHEN S3 => piso_nuevo <= "11";
-            WHEN OTHERS => piso_nuevo <= "00";
-        END CASE;
-    END PROCESS;
+            when others => piso_nuevo <= "00";
+        end case;
+    end process;
     
-    NEXT_STATE_DECODE: PROCESS (state, piso_deseado)
-    BEGIN
+    NEXT_STATE_DECODE: process (state, piso_deseado)
+    begin
         next_state <= S0;
-        CASE (state) is
+        case (state) is
         
-            WHEN S0 =>
-                IF (piso_deseado = "00") THEN
+            when S0 =>
+                if (piso_deseado = "00") then
                     next_state <= S0;
-                ELSIF (piso_deseado = "01") THEN
+                elsif (piso_deseado = "01") then
                     next_state <= S1;
-                ELSIF (piso_deseado = "10") THEN
+                elsif (piso_deseado = "10") then
                     next_state <= S2;
-                ELSIF (piso_deseado = "11") THEN
+                elsif (piso_deseado = "11") then
                     next_state <= S3;    
-                END IF;
+                end if;
                 
-            WHEN S1 =>
-              IF (piso_deseado = "00") THEN
+            when S1 =>
+              if (piso_deseado = "00") then
                     next_state <= S0;
-              ELSIF (piso_deseado = "01") THEN
+              elsif (piso_deseado = "01") then
                     next_state <= S1;
-              ELSIF (piso_deseado = "10") THEN
+              elsif (piso_deseado = "10") then
                     next_state <= S2;
-              ELSIF (piso_deseado = "11") THEN
+              elsif (piso_deseado = "11") then
                     next_state <= S3;    
-              END IF;
+              end if;
               
-            WHEN S2 =>
-              IF (piso_deseado = "00") THEN
+            when S2 =>
+              if (piso_deseado = "00") then
                     next_state <= S0;
-              ELSIF (piso_deseado = "01") THEN
+              elsif (piso_deseado = "01") then
                     next_state <= S1;
-              ELSIF (piso_deseado = "10") THEN
+              elsif (piso_deseado = "10") then
                     next_state <= S2;
-              ELSIF (piso_deseado = "11") THEN
+              elsif (piso_deseado = "11") then
                     next_state <= S3;    
-              END IF;
+              end if;
               
-            WHEN S3 =>
-              IF (piso_deseado = "00") THEN
+            when S3 =>
+              if (piso_deseado = "00") then
                     next_state <= S0;
-              ELSIF (piso_deseado = "01") THEN
+              elsif (piso_deseado = "01") then
                     next_state <= S1;
-              ELSIF (piso_deseado = "10") THEN
+              elsif (piso_deseado = "10") then
                     next_state <= S2;
-              ELSIF (piso_deseado = "11") THEN
+              elsif (piso_deseado = "11") then
                     next_state <= S3;
-              END IF;
+              end if;
             
-        END CASE;
-    END PROCESS;
+        end case;
+    end process;
 
 end Behavioral;
