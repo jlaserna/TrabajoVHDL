@@ -1,1 +1,0 @@
--wto "0cc88d8985224b289cd2dde333d9e099" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Tb_clock_divider_behav" "xil_defaultlib.Tb_clock_divider" -log "elaborate.log" 

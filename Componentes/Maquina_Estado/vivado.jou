@@ -78,4 +78,3 @@ source Maquina_Estado_tb.tcl
 close_sim
 launch_simulation
 source Maquina_Estado_tb.tcl
-close_sim
