@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jan  9 22:23:08 2019
+# Process ID: 11480
+# Current directory: C:/Users/Javier/Desktop/Clk_divider
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15352 C:\Users\Javier\Desktop\Clk_divider\Clk_divider.xpr
+# Log file: C:/Users/Javier/Desktop/Clk_divider/vivado.log
+# Journal file: C:/Users/Javier/Desktop/Clk_divider\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Javier/Desktop/Clk_divider/Clk_divider.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Usuario/Desktop/Universidad/4 Curso/SED/Clk_divider' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/digilent-xdc-master/Nexys-4-DDR-Master.xdc', nor could it be found using path 'C:/Users/Usuario/Desktop/digilent-xdc-master/Nexys-4-DDR-Master.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 867.449 ; gain = 116.254
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Javier/Desktop/Clk_divider/Clk_divider.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Tb_clock_divider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Javier/Desktop/Clk_divider/Clk_divider.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Tb_clock_divider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Desktop/Clk_divider/Clk_divider.srcs/sources_1/new/Clk_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clock_Divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Javier/Desktop/Clk_divider/Clk_divider.srcs/sim_1/new/Clk_divider_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Tb_clock_divider
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Javier/Desktop/Clk_divider/Clk_divider.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 0cc88d8985224b289cd2dde333d9e099 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Tb_clock_divider_behav xil_defaultlib.Tb_clock_divider -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Clock_Divider [clock_divider_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_clock_divider
+Built simulation snapshot Tb_clock_divider_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Javier/Desktop/Clk_divider/Clk_divider.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Tb_clock_divider_behav -key {Behavioral:sim_1:Functional:Tb_clock_divider} -tclbatch {Tb_clock_divider.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Tb_clock_divider.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Tb_clock_divider_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 909.000 ; gain = 7.242
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  9 22:26:30 2019...
