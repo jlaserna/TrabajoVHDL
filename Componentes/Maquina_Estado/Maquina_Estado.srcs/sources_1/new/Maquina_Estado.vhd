@@ -8,7 +8,11 @@ entity Maquina_Estado is
     port ( clk : in std_logic;
            reset : in std_logic;
            piso_deseado : in std_logic_vector (1 downto 0);
-           piso_nuevo : out std_logic_vector (1 downto 0));
+           piso_nuevo : out std_logic_vector (1 downto 0);
+           puerta: out std_logic;
+           motor: out std_logic_vector(1 downto 0);
+           tmp: out std_logic_vector(1 downto 0)
+         );
 end Maquina_Estado;
 
 architecture Behavioral of Maquina_Estado is
@@ -48,28 +52,46 @@ begin
           when S0 =>
               if (piso_deseado = "00") then
                   next_state <= S0;
+                  puerta<='1';
+                  motor<="00";
               elsif (piso_deseado /= "00") then
                   next_state <= S1;
                   temp <= piso_deseado;
+                  puerta<='0';
+                  motor<="01";
               end if;
                       
           when S1 =>
               if (temp /= "01") then 
                  if(temp = "10") or (temp = "11") then
                      next_state <= S2;
+                     motor<="01";
                  elsif(temp = "00") then
                      next_state <= S0;
+                     motor<="10";
                  end if;
+                 puerta<='0';
               else 
                  if (piso_deseado = "00") then
                      next_state <= S0;
+                     puerta<='0';
+                     motor<="10";
+                     temp <= "00";
                  elsif (piso_deseado = "01") then
                      next_state <= S1;
+                     puerta<='1';
+                     motor<="00";
+                     temp <= "01";
                  elsif (piso_deseado = "10") then
                      next_state <= S2;
+                     puerta<='0';
+                     motor<="01";
+                     temp <= "10";
                  elsif (piso_deseado = "11") then
                      next_state <= S2;
                      temp <= piso_deseado;
+                     puerta<='0';
+                     motor<="01";
                  end if;
              end if;
                      
@@ -77,31 +99,50 @@ begin
              if (temp /= "10") then 
                if(temp = "00") or (temp = "01") then
                    next_state <= S1;
+                   motor<="10";
                elsif(temp = "11") then
                     next_state <= S3;
+                    motor<="01";
                end if;
+               puerta<='0';
              else 
                if (piso_deseado = "00") then
                     next_state <= S1;
                     temp <= piso_deseado;
+                    puerta<='0';
+                    motor<="10";
                elsif (piso_deseado = "01") then
                     next_state <= S1;
+                    puerta<='0';
+                    motor<="10";
+                    temp <= "01";
                elsif (piso_deseado = "10") then
                     next_state <= S2;
+                    puerta<='1';
+                    motor<="00";
+                    temp <= "10";
                elsif (piso_deseado = "11") then
                     next_state <= S3;
+                    puerta<='0';
+                    motor<="01";
+                    temp <= "11";
                end if;
             end if;
                      
          when S3 =>
             if (piso_deseado = "11") then
                 next_state <= S3;
+                puerta<='1';
+                motor<="00";
             elsif (piso_deseado /= "11") then
                 next_state <= S2;
                 temp <= piso_deseado;
+                puerta<='0';
+                motor<="10";
             end if;           
             
         end case;
+        tmp <= temp;
     end process;
 
 end Behavioral;
