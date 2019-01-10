@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jan  9 12:53:05 2019
+# Process ID: 1585544
+# Current directory: C:/Users/Usuario/Desktop/Universidad/4º Curso/SED/BCD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1589320 C:\Users\Usuario\Desktop\Universidad\4º Curso\SED\BCD\BCD.xpr
+# Log file: C:/Users/Usuario/Desktop/Universidad/4º Curso/SED/BCD/vivado.log
+# Journal file: C:/Users/Usuario/Desktop/Universidad/4º Curso/SED/BCD\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Usuario/Desktop/Universidad/4º Curso/SED/BCD/BCD.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source BCD_tb.tcl
+close_sim
