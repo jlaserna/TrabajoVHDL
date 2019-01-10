@@ -59,20 +59,20 @@ begin
     
     stim_proc2: process
     begin
-        wait for 10 * K;
-        piso_deseado <= "11";
+        wait for 7 * K;
+        piso_deseado <= "10";
         wait for 1 * K;
+        piso_deseado <= "10";
+        wait for 1 * K;
+        piso_deseado <= "10";
+        wait for 1 * K;
+        piso_deseado <= "00";
+        wait for 0.25 * K;
         piso_deseado <= "01";
         wait for 1 * K;
-        piso_deseado <= "10";
-        wait for 1 * K;
-        piso_deseado <= "00";
-        wait for 2 * K;
-        piso_deseado <= "10";
-        wait for 1 * K;
-        piso_deseado <= "11";
+        piso_deseado <= "01";
         wait for 5 * K;
-        piso_deseado <= "00";
+        piso_deseado <= "01";
         wait for 7 * K;
         piso_deseado <= "01";
     end process;
@@ -80,8 +80,8 @@ begin
     stim_proc3: process
     begin
     wait until piso_nuevo = "10";
-    wait until piso_nuevo = "00";
-    wait until piso_nuevo = "11";
+    wait until piso_nuevo = "10";
+    wait until piso_nuevo = "01";
     wait until piso_nuevo = "00";
     wait until piso_nuevo = "11";
     wait until piso_nuevo = "01";
@@ -89,8 +89,7 @@ begin
     wait until piso_nuevo = "10";
     wait until piso_nuevo = "00";
     wait until piso_nuevo = "11";
-
-    
+    wait until piso_nuevo = "10";    
 
     assert false
     report "Simulation finished."

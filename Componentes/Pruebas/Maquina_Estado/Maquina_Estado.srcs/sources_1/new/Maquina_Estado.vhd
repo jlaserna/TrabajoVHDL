@@ -69,7 +69,9 @@ begin
                   next_state <= S0;
                   puerta<='1';
                   motor<="00";
-                  moviendo <= '0';
+                  if (moviendo = '1') then
+                      moviendo <= not moviendo;
+                  end if;
                   temp <= "00";
               elsif (piso_deseado /= "00") and (moviendo /= '1') then
                   puerta<='0';
@@ -173,6 +175,9 @@ begin
                  motor<="00";
             elsif (piso_deseado = "11") then
                 next_state <= S3;
+                if (moviendo = '1') then
+                    moviendo <= not moviendo;
+                end if;
                 puerta<='1';
                 motor<="00";
             elsif (piso_deseado /= "11") and (moviendo /= '1') then
