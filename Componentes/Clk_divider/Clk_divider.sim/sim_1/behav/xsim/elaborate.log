@@ -12,5 +12,5 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling architecture behavioral of entity xil_defaultlib.Clock_Divider [clock_divider_default]
-Compiling architecture behavioral of entity xil_defaultlib.tb_clock_divider
+Compiling architecture behavior of entity xil_defaultlib.tb_clock_divider
 Built simulation snapshot Tb_clock_divider_behav
