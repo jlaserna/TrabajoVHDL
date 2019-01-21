@@ -5,7 +5,8 @@ entity Pulse_register is
     Port ( clk : in std_logic;
            reset : in std_logic;
            boton : in std_logic_vector(3 downto 0);
-           piso_deseado: out std_logic_vector(1 downto 0)
+           piso_deseado: out std_logic_vector(1 downto 0);
+           moviendo : in std_logic := '0'
     );
 end Pulse_register;
 
@@ -20,7 +21,7 @@ begin
         if rising_edge(clk) then
             if (reset = '0') then
                 state <= S0;
-            else
+            elsif moviendo = '0' then
                 state <= next_state;
             end if;
         end if;
@@ -28,13 +29,13 @@ begin
 
     OUTPUT_DECODE: process (state)
     begin
-            case (state) is
-                when S0 => piso_deseado <= "00";
-                when S1 => piso_deseado <= "01";
-                when S2 => piso_deseado <= "10";
-                when S3 => piso_deseado <= "11";
-                when others => piso_deseado <= "00";
-            end case;
+        case (state) is
+            when S0 => piso_deseado <= "00";
+            when S1 => piso_deseado <= "01";
+            when S2 => piso_deseado <= "10";
+            when S3 => piso_deseado <= "11";
+            when others => piso_deseado <= "00";
+        end case;
     end process;
     
     NEXT_STATE_DECODE: process (state, boton)

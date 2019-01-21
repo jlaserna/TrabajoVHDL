@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/Javier/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/Usuario/Desktop/TRABAJOVHDL/Maquina_Estado/Maquina_Estado.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="12410e6e77e14d7fbf59865634e513a7"/>
@@ -76,7 +76,7 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../Downloads/digilent-xdc-master/Nexys-4-DDR-Master.xdc">
+      <File Path="$PPRDIR/../../digilent-xdc-master/Nexys-4-DDR-Master.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

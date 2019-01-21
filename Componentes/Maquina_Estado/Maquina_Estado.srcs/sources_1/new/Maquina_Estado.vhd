@@ -7,9 +7,9 @@ entity Maquina_Estado is
            reset : in std_logic;
            piso_deseado : in std_logic_vector (1 downto 0);
            piso_nuevo : out std_logic_vector (1 downto 0);
-           puerta: out std_logic;
+           puerta: out std_logic_vector (1 downto 0);
            motor: out std_logic_vector(1 downto 0);
-           tmp: out std_logic_vector(1 downto 0)
+           moviendo: out std_logic
          );
 end Maquina_Estado;
 
@@ -20,14 +20,12 @@ architecture Behavioral of Maquina_Estado is
     
 begin
 
- SYNC_PROC: process (clk)
+ SYNC_PROC: process (clk, reset)
     begin
-        if rising_edge(clk) then
-            if (reset = '1') then
+        if (reset = '0') then
                 state <= S0;
-            else
-                state <= next_state;
-            end if;
+        elsif rising_edge(clk) then
+            state <= next_state;
         end if;
     end process;
     
@@ -50,13 +48,15 @@ begin
           when S0 =>
               if (piso_deseado = "00") then
                   next_state <= S0;
-                  puerta<='1';
+                  puerta<="10";
                   motor<="00";
+                  moviendo<='0';
               elsif (piso_deseado /= "00") then
-                  puerta<='0';
+                  puerta<="01";
                   motor<="01";
                   next_state <= S1;
                   temp <= piso_deseado;
+                  moviendo<='1';
               end if;
                       
           when S1 =>
@@ -68,28 +68,33 @@ begin
                      next_state <= S0;
                      motor<="10";
                  end if;
-                 puerta<='0';
+                 puerta<="01";
+                 moviendo<='1';
               else 
                  if (piso_deseado = "00") then
                      next_state <= S0;
-                     puerta<='0';
+                     puerta<="01";
                      motor<="10";
                      temp <= "00";
+                     moviendo<='1';
                  elsif (piso_deseado = "01") then
                      next_state <= S1;
-                     puerta<='1';
+                     puerta<="10";
                      motor<="00";
                      temp <= "01";
+                     moviendo<='0';
                  elsif (piso_deseado = "10") then
                      next_state <= S2;
-                     puerta<='0';
+                     puerta<="01";
                      motor<="01";
                      temp <= "10";
+                     moviendo<='1';
                  elsif (piso_deseado = "11") then
                      next_state <= S2;
                      temp <= piso_deseado;
-                     puerta<='0';
+                     puerta<="01";
                      motor<="01";
+                     moviendo<='1';
                  end if;
              end if;
                      
@@ -102,45 +107,51 @@ begin
                     next_state <= S3;
                     motor<="01";
                end if;
-               puerta<='0';
+               puerta<="01";
+               moviendo<='1';
              else 
                if (piso_deseado = "00") then
                     next_state <= S1;
                     temp <= piso_deseado;
-                    puerta<='0';
+                    puerta<="01";
                     motor<="10";
+                    moviendo<='1';
                elsif (piso_deseado = "01") then
                     next_state <= S1;
-                    puerta<='0';
+                    puerta<="01";
                     motor<="10";
                     temp <= "01";
+                    moviendo<='1';
                elsif (piso_deseado = "10") then
                     next_state <= S2;
-                    puerta<='1';
+                    puerta<="10";
                     motor<="00";
                     temp <= "10";
+                    moviendo<='0';
                elsif (piso_deseado = "11") then
                     next_state <= S3;
-                    puerta<='0';
+                    puerta<="01";
                     motor<="01";
                     temp <= "11";
+                    moviendo<='1';
                end if;
             end if;
                      
          when S3 =>
             if (piso_deseado = "11") then
                 next_state <= S3;
-                puerta<='1';
+                puerta<="10";
                 motor<="00";
+                moviendo<='0';
             elsif (piso_deseado /= "11") then
-                puerta<='0';
+                puerta<="01";
                 motor<="10";
                 next_state <= S2;
                 temp <= piso_deseado;
+                moviendo<='1';
             end if;           
             
         end case;
-        tmp <= temp;
     end process;
 
 end Behavioral;

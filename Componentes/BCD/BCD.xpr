@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/ALEX PC/Desktop/BCD/BCD.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/Usuario/Desktop/TRABAJOVHDL/BCD/BCD.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="8e35bc515f094d798aca7fc44622d517"/>
@@ -74,7 +74,7 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../../../digilent-xdc-master/Nexys-4-DDR-Master.xdc">
+      <File Path="$PPRDIR/../../digilent-xdc-master/Nexys-4-DDR-Master.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

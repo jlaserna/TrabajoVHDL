@@ -5,7 +5,7 @@ entity BCD is
     port ( 
             code : in std_logic_vector (1 downto 0);
             led : out std_logic_vector (6 downto 0);
-            display: out std_logic_vector (3 downto 0)
+            display: out std_logic_vector (7 downto 0)
     );
 end BCD;
 
@@ -20,10 +20,10 @@ begin
                 "1111110" when others;
         
     with code select
-        display <= "0001" when "00",
-                   "0010" when "01",
-                   "0100" when "10",
-                   "1000" when "11",
-                   "0000" when others;
+        display <= "11111110" when "00",
+                   "11111101" when "01",
+                   "11111011" when "10",
+                   "11110111" when "11",
+                   "11111111" when others;
 
 end Behavioral;
