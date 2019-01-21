@@ -1,3 +1,41 @@
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+--                             SISTEMAS ELECTRÓNICOS DIGITALES                                          --
+--                                  TRABAJO VHDL ASCENSOR                                               --
+--                                     CURSO 2018/2019                                                  --
+--                                                                                                      --
+--                                                                                                      --
+--  AUTORES:                                                                                            --
+--      JAVIER LASERNA MORATALLA Nº52431                                                                --
+--      ALEJANDRO MORA SÁNCHEZ Nº52496                                                                  --
+--      LUIS PEDRERO MORCILLO Nº52541                                                                   --
+--                                                                                                      --
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+--                                                                                                      --
+--      COMPONENTE: ASCENSOR                                                                            --
+--                                                                                                      --
+--                                                                                                      --
+--  IMPLEMENTACIÓN DEL CÓDIGO CORRESPONDIENTE AL ASCENSOR                                               --
+--      ENTRADAS: clk, reset, moviendo (std_logic)                                                      --
+--                piso_deseado (std_logic_vector)                                                       --
+--      SALIDAS:  puerta_abierta, display_number, display_selection, motor_puerta (std_logic_vector)    --
+--                                                                                                      --
+--      FUNCIONAMIENTO:                                                                                 --
+--                                                                                                      --
+--         El objetivo del módulo Ascensor es conectar cada uno de los distintos componentes            --
+--         de forma que funcionen correctamente. Para ello se realizan instanciaciones de los           --
+--         componentes máquina de estado, pulse register, clk divider y BCD; conectándo las             --
+--         salidas y entradas mediante distintas señales.                                               --
+--                                                                                                      --
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
