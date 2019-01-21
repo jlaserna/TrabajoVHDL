@@ -1,3 +1,43 @@
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+--                             SISTEMAS ELECTRÓNICOS DIGITALES                                   --
+--                                  TRABAJO VHDL ASCENSOR                                        --
+--                                     CURSO 2018/2019                                           --
+--                                                                                               --
+--                                                                                               --
+--  AUTORES:                                                                                     --
+--      JAVIER LASERNA MORATALLA Nº52431                                                         --
+--      ALEJANDRO MORA SÁNCHEZ Nº52496                                                           --
+--      LUIS PEDRERO MORCILLO Nº52541                                                            --
+--                                                                                               --
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+--                                                                                               --
+--      COMPONENTE: CONVERTIDOR BDC                                                              --
+--                                                                                               --
+--                                                                                               --
+--  IMPLEMENTACIÓN DEL CÓDIGO CORRESPONDIENTE AL CONVERTIDOR BCD                                 --
+--      ENTRADAS: code (std_logic_vector)                                                        --
+--      SALIDAS: led, display (std_logic_vector)                                                 --
+--                                                                                               --
+--      FUNCIONAMIENTO:                                                                          --
+--                                                                                               --
+--         El objetivo del decodificador BCD de 7 segmentos es mostrar en el display             --
+--         de la placa el número del piso en el que nos encontramos. Disponemos una entrada      --
+--         (code) la cual recibe el piso en el que se encuentra el ascensor y dos salidas,       --
+--         una para seleccionar cual, de los 8 dígitos de ambos display se enciende              --
+--         (display); y otra para mostrar el número en decimal del piso en el que se             --
+--         encuentra (led). Para ello, cada posible valor de la entrada, se lo asignamos a las   --
+--         distintas opciones de salida que queremos lograr.                                     --
+--                                                                                               --
+--                                                                                               --
+--                                                                                               --
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+
+
+
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 

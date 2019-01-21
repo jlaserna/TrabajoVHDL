@@ -1,3 +1,45 @@
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+--                             SISTEMAS ELECTRÓNICOS DIGITALES                                   --
+--                                  TRABAJO VHDL ASCENSOR                                        --
+--                                     CURSO 2018/2019                                           --
+--                                                                                               --
+--                                                                                               --
+--  AUTORES:                                                                                     --
+--      JAVIER LASERNA MORATALLA Nº52431                                                         --
+--      ALEJANDRO MORA SÁNCHEZ Nº52496                                                           --
+--      LUIS PEDRERO MORCILLO Nº52541                                                            --
+--                                                                                               --
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+--                                                                                               --
+--      COMPONENTE: MÁQUINA DE ESTADO                                                            --
+--                                                                                               --
+--                                                                                               --
+--  IMPLEMENTACIÓN DEL CÓDIGO CORRESPONDIENTE A LA MÁQUINA DE ESTADO                             --
+--      ENTRADAS: clk, reset (std_logic)                                                         --
+--                piso_deseado (std_logic_vector)                                                --
+--      SALIDAS: moviendo (std_logic)                                                            --
+--               piso_nuevo, puerta, motor (std_logic_vector)                                    --
+--                                                                                               --
+--      FUNCIONAMIENTO:                                                                          --
+--                                                                                               --
+--         El objetivo de la máquina de estados es determinar el piso del ascensor en el que     --
+--         se encuentra, si la puerta está abierta o cerrada y si el ascensor sube o baja.       --
+--         Se disponen de 4 pisos por lo que tiene 4 estados: S0 para el piso 0,                 --
+--         S1 para el piso 1, S2 para el piso 2, S3 para el piso 3. Por otro lado, se dispone    --
+--         de una entrada la cual  determina si se produce cambio de estado o si se              --
+--         permanece en el mismo (piso_deseado), una señal de reloj (clk) y un reset (reset).    --
+--         En cuanto a las salidas cuenta con una la cual determina si la puerta está abierta    --
+--         o cerrada (puerta) y otra que determina si el ascensor sube o baja de piso (motor).   --                                                                   --
+--                                                                                               --
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 

@@ -1,3 +1,43 @@
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+--                             SISTEMAS ELECTRÓNICOS DIGITALES                                   --
+--                                  TRABAJO VHDL ASCENSOR                                        --
+--                                     CURSO 2018/2019                                           --
+--                                                                                               --
+--                                                                                               --
+--  AUTORES:                                                                                     --
+--      JAVIER LASERNA MORATALLA Nº52431                                                         --
+--      ALEJANDRO MORA SÁNCHEZ Nº52496                                                           --
+--      LUIS PEDRERO MORCILLO Nº52541                                                            --
+--                                                                                               --
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+--                                                                                               --
+--      COMPONENTE: PULSE REGISTER                                                               --
+--                                                                                               --
+--                                                                                               --
+--  IMPLEMENTACIÓN DEL CÓDIGO CORRESPONDIENTE AL PULSE REGISTER                                  --
+--      ENTRADAS: clk, reset, moviendo (std_logic)                                               --
+--                boton (std_logic_vector)                                                       --
+--      SALIDAS:  piso_deseado (std_logic_vector)                                                --
+--                                                                                               --
+--      FUNCIONAMIENTO:                                                                          --
+--                                                                                               --
+--         El objetivo del pulse register es registrar el piso al que se quiere ir. Dispone      --
+--         de los mismos cuatro estados que la máquina principal. La entrada boton determina     --
+--         si se produce cambio de estado o se permanece en el mismo la cual se detcta           --
+--         al producirse un pulso de reloj. La señal moviendo indica si el ascensor se           --
+--         encuentra en movimiento o no. Si la señal de reset no está activa, la señal del       --
+--         boton se asigna a la salida piso_deseado.                                             --
+--                                                                                               --
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 

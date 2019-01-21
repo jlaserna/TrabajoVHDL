@@ -1,3 +1,38 @@
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+--                             SISTEMAS ELECTRÓNICOS DIGITALES                                   --
+--                                  TRABAJO VHDL ASCENSOR                                        --
+--                                     CURSO 2018/2019                                           --
+--                                                                                               --
+--                                                                                               --
+--  AUTORES:                                                                                     --
+--      JAVIER LASERNA MORATALLA Nº52431                                                         --
+--      ALEJANDRO MORA SÁNCHEZ Nº52496                                                           --
+--      LUIS PEDRERO MORCILLO Nº52541                                                            --
+--                                                                                               --
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+--                                                                                               --
+--      COMPONENTE: CLOCK DIVIDER (DIVISOR DE FRECUENCIA)                                        --
+--                                                                                               --
+--                                                                                               --
+--  IMPLEMENTACIÓN DEL CÓDIGO CORRESPONDIENTE AL CLOCK DIVIDER                                   --
+--      ENTRADAS: clk, reset (std_logic)                                                         --
+--      SALIDAS: clk_out (std_logic)                                                             --
+--                                                                                               --
+--      FUNCIONAMIENTO:                                                                          --
+--                                                                                               --
+--         El objetivo del clock divider es es reducir la frecuencia con la que se produce       --
+--         un pulso de reloj, es decir, crear una señal de reloj distinta a la del reloj de      --
+--         la placa. Este clock divider genera una señal de reloj a la salida cada               --
+--         200.000.000 pulsos del reloj de la placa.                                             --
+--                                                                                               --
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+
+
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.ALL;
