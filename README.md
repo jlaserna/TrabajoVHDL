@@ -1,5 +1,5 @@
 # TrabajoVDHL
-## TAsignatura SED, Ingeniería Electrónica Industrial y Automática UPM
+## Asignatura SED, Ingeniería Electrónica Industrial y Automática UPM
 **Autores:**
 ```
 Javier Laserna Moratalla
