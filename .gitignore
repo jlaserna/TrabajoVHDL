@@ -88,6 +88,7 @@
 !*.docx
 !*.vsdx
 !*.jpg
+!*.bit
 
 ~$emoria.docx
 
