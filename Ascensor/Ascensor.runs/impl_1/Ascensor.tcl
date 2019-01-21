@@ -65,17 +65,16 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.cache/wt [current_project]
-  set_property parent.project_path C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.xpr [current_project]
-  set_property ip_output_repo C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.xpr [current_project]
+  set_property ip_output_repo C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.runs/synth_1/Ascensor.dcp
-  read_xdc C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.srcs/constrs_1/imports/bak/Nexys-4-DDR-Master.xdc
+  add_files -quiet C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.runs/synth_1/Ascensor.dcp
+  read_xdc C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.srcs/constrs_1/imports/bak/Nexys-4-DDR-Master.xdc
   link_design -top Ascensor -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="cbe097a96cb84534a45708af503d863d"/>
@@ -61,25 +61,25 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../BCD/BCD.srcs/sources_1/new/BCD.vhd">
+      <File Path="$PPRDIR/../Componentes/BCD/BCD.srcs/sources_1/new/BCD.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../Clk_divider/Clk_divider.srcs/sources_1/new/Clk_divider.vhd">
+      <File Path="$PPRDIR/../Componentes/Clk_divider/Clk_divider.srcs/sources_1/new/Clk_divider.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd">
+      <File Path="$PPRDIR/../Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../Pulse_register/Pulse_register.srcs/sources_1/new/Pulse_register.vhd">
+      <File Path="$PPRDIR/../Componentes/Pulse_register/Pulse_register.srcs/sources_1/new/Pulse_register.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

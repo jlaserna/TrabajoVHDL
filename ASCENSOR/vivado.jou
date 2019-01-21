@@ -2,13 +2,25 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Jan 11 11:17:01 2019
-# Process ID: 1935160
-# Current directory: C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/bak/TRABAJOVHDL/Ascensor
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1935240 C:\Users\Usuario\Documents\GitHub\TrabajoVHDL\bak\TRABAJOVHDL\Ascensor\Ascensor.xpr
-# Log file: C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/bak/TRABAJOVHDL/Ascensor/vivado.log
-# Journal file: C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/bak/TRABAJOVHDL/Ascensor\vivado.jou
+# Start of session at: Mon Jan 21 12:18:27 2019
+# Process ID: 1021868
+# Current directory: C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1016204 C:\Users\Usuario\Documents\GitHub\TrabajoVHDL\ASCENSOR\ASCENSOR.xpr
+# Log file: C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/vivado.log
+# Journal file: C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.xpr
+open_project C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.xpr
 update_compile_order -fileset sources_1
+update_files -from_files C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/Componentes/BCD/BCD.srcs/sources_1/new/BCD.vhd -to_files C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/BCD/BCD.srcs/sources_1/new/BCD.vhd -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/Componentes/Clk_divider/Clk_divider.srcs/sources_1/new/Clk_divider.vhd -to_files C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/Clk_divider/Clk_divider.srcs/sources_1/new/Clk_divider.vhd -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd -to_files C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/Componentes/Pulse_register/Pulse_register.srcs/sources_1/new/Pulse_register.vhd -to_files C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/Pulse_register/Pulse_register.srcs/sources_1/new/Pulse_register.vhd -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1

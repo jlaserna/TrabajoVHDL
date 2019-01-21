@@ -17,25 +17,24 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.cache/wt [current_project]
-set_property parent.project_path C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.cache/wt [current_project]
+set_property parent.project_path C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/BCD/BCD.srcs/sources_1/new/BCD.vhd
-  C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Clk_divider/Clk_divider.srcs/sources_1/new/Clk_divider.vhd
-  C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd
-  C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Pulse_register/Pulse_register.srcs/sources_1/new/Pulse_register.vhd
-  C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.srcs/sources_1/new/Ascensor.vhd
+  C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/Componentes/BCD/BCD.srcs/sources_1/new/BCD.vhd
+  C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/Componentes/Clk_divider/Clk_divider.srcs/sources_1/new/Clk_divider.vhd
+  C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/Componentes/Maquina_Estado/Maquina_Estado.srcs/sources_1/new/Maquina_Estado.vhd
+  C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/Componentes/Pulse_register/Pulse_register.srcs/sources_1/new/Pulse_register.vhd
+  C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.srcs/sources_1/new/Ascensor.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -45,8 +44,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.srcs/constrs_1/imports/bak/Nexys-4-DDR-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/sed/Documents/TRABAJOVHDL/bak/TRABAJOVHDL/Ascensor/Ascensor.srcs/constrs_1/imports/bak/Nexys-4-DDR-Master.xdc]
+read_xdc C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.srcs/constrs_1/imports/bak/Nexys-4-DDR-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/Usuario/Documents/GitHub/TrabajoVHDL/ASCENSOR/ASCENSOR.srcs/constrs_1/imports/bak/Nexys-4-DDR-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
